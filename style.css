@@ -81,6 +81,48 @@ button{
     font-weight: 700;
     cursor: pointer;
 }
+.share-options{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #49556B;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    height: 3.2rem;
+    /* opacity: 0.9; */
+    width: 220px;
+    /* margin-left:300px; */
+}
+#share-button:hover{
+    background-color: #555A65;
+    color: var(--secondary-color);
+}
+#share-button img:hover{
+    filter: brightness(0) invert(1);
+}
+#share-button:active{
+    transform: translateY(2px);
+}
+.share-options p{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+.icons{
+    display: flex;
+}
+.icons li{
+    margin: 0 0.5rem;
+}
+
 
 @media(min-width: 630px){
     body{
@@ -124,6 +166,25 @@ button{
         padding: 0.5rem;
         font-size: 0.85rem;
     }
+    .share-options{
+        opacity: 0.9;
+        width: 220px;
+        margin-left: 19%;
+        margin-top: -140px;
+    }
+    .share-options::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #49556B;
+        border-bottom: 0;
+        margin-left: -15px;
+        margin-bottom: -15px;
+    }
 }
 @media (min-width: 850px){
     .first-line{
@@ -141,8 +202,13 @@ button{
     .profile-detail{
         margin-left: -7rem;
     }
+    .share-options{
+        margin-left:30%;
+    }
+
+    
 }
-@media (min-width: 1000px){
+@media (min-width: 1100px){
     body{
         padding: 10rem 20rem;
     }
@@ -174,5 +240,22 @@ button{
     button{
         padding: 0.8rem;
         font-size: 1rem;
+    }
+    .share-options{
+        margin-left:22%;
+    }
+
+    .share-options::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: var(--primary-font-color);
+        border-bottom: 0;
+        margin-left: -15px;
+        margin-bottom: -15px;
     }
 }
