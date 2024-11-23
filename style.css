@@ -63,9 +63,9 @@ body{
     font-size: 0.9rem;
     color: var(--primary-font-color);
 }
-.profile-detail{
+/* .profile-detail{
     margin-left: -2rem;
-}
+} */
 .author-post-date{
     font-size: 0.9rem;
     color: var(--text-color);
